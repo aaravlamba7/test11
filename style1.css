@@ -1,0 +1,105 @@
+/* Simple CSS for both pages */
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font: 16px Arial, sans-serif;
+  line-height: 1.5;
+  color: #273746;
+  background: #f5f7f9;
+}
+
+.site-header, footer {
+  padding: 18px 6%;
+  background: white;
+  border-bottom: 1px solid #d7e0e8;
+}
+.site-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+}
+.brand {
+  color: #1d3551;
+  font-size: 18px;
+  font-weight: bold;
+  text-decoration: none;
+}
+.brand-icon {
+  padding: 6px 10px;
+  color: white;
+  background: #1d3551;
+  border-radius: 5px;
+}
+.nav-link {
+  padding: 8px;
+  color: #315f8b;
+  text-decoration: none;
+}
+.nav-link.active { background: #edf3f8; }
+
+.container {
+  width: 90%;
+  max-width: 650px;
+  min-height: 75vh;
+  margin: 35px auto;
+}
+.intro { margin-bottom: 20px; }
+.small-heading {
+  color: #315f8b;
+  font-size: 12px;
+  font-weight: bold;
+}
+h1, h2 { color: #1d3551; }
+h1 { font-size: 32px; }
+h2 { font-size: 20px; }
+.muted { color: #697887; }
+
+.panel {
+  margin: 18px 0;
+  padding: 18px;
+  background: white;
+  border: 1px solid #d7e0e8;
+  border-radius: 6px;
+}
+form { display: grid; gap: 10px; }
+label { font-size: 14px; font-weight: bold; }
+input:not([type="checkbox"]), select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #cbd6df;
+  border-radius: 5px;
+  font: inherit;
+}
+.button {
+  padding: 10px 15px;
+  color: white;
+  background: #1d3551;
+  border: 0;
+  border-radius: 5px;
+  font: inherit;
+  font-weight: bold;
+}
+.check-line { display: flex; align-items: center; gap: 8px; }
+.qr-frame {
+  width: 174px;
+  height: 174px;
+  margin: 18px auto;
+  display: grid;
+  place-items: center;
+  border: 1px solid #d7e0e8;
+  background: white;
+}
+.qr-code { text-align: center; color: #697887; }
+.pass-help { text-align: center; }
+footer {
+  border-top: 1px solid #d7e0e8;
+  border-bottom: 0;
+  color: #697887;
+  text-align: center;
+}
+
+@media (max-width: 560px) {
+  .site-header { align-items: flex-start; flex-direction: column; }
+}

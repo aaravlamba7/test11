@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Student Pass</title>
+  <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+  <header class="site-header"><span class="brand"><span class="brand-icon">G</span> Campus Gate Pass</span></header>
+  <main class="container">
+    <h1>Student Pass</h1>
+    <section class="panel">
+      <h2>Sign In</h2>
+      <form>
+        <label for="roll">Roll Number</label><input id="roll" placeholder="Roll number">
+        <label for="passcode">Pass Code</label><input id="passcode" type="password" placeholder="Pass code">
+        <button class="button" type="button">View Pass</button>
+      </form>
+    </section>
+    <section class="panel">
+      <h2>Register</h2>
+      <form>
+        <label for="name">Name</label><input id="name" placeholder="Full name">
+        <label for="new-roll">Roll Number</label><input id="new-roll" placeholder="Roll number">
+        <label for="new-code">Pass Code</label><input id="new-code" type="password" placeholder="Create pass code">
+        <label for="confirm-code">Confirm Pass Code</label><input id="confirm-code" type="password" placeholder="Confirm pass code">
+        <button class="button" type="button">Create Account</button>
+      </form>
+    </section>
+    <section class="panel">
+      <h2>Your Pass</h2>
+      <p><b>Name:</b> Student Name</p><p><b>Roll Number:</b> Student Roll Number</p><p><b>Status:</b> OUT</p>
+      <div class="qr-frame"><div class="qr-code">QR Code</div></div>
+    </section>
+  </main>
+  <footer>Campus Gate Pass</footer>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Guard Desk</title>
+  <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+  <header class="site-header"><span class="brand"><span class="brand-icon">G</span> Campus Gate Pass</span></header>
+  <main class="container">
+    <h1>Guard Desk</h1>
+    <section class="panel">
+      <h2>Sign In</h2>
+      <form>
+        <label for="pin">Guard PIN</label><input id="pin" type="password" placeholder="Guard PIN">
+        <button class="button" type="button">Open Desk</button>
+      </form>
+    </section>
+    <section class="panel">
+      <h2>Record Scan</h2>
+      <form>
+        <label for="qr-token">QR Token</label><input id="qr-token" placeholder="Scanned token">
+        <label for="movement">Movement</label>
+        <select id="movement"><option value="">Choose entry or exit</option><option value="ENTRY">Entry</option><option value="EXIT">Exit</option></select>
+        <label class="check-line"><input type="checkbox"> ID checked</label>
+        <button class="button" type="button">Record Scan</button>
+      </form>
+    </section>
+    <section class="panel">
+      <h2>Student Details</h2>
+      <p><b>Name:</b> Student Name</p><p><b>Roll Number:</b> Student Roll Number</p><p><b>Status:</b> OUT</p>
+    </section>
+    <section class="panel"><h2>Recent Scans</h2><p class="muted">No scans.</p></section>
+  </main>
+  <footer>Campus Gate Pass</footer>
+</body>
+</html>
